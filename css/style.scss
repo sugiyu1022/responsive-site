@@ -4,12 +4,13 @@
 $basefontfamily :"HG行書体",sans-serif;
 
 html{
-  font-size: 170%;
+  font-size: 150%;
   font-family :$basefontfamily;
 }
 
 .header-pic{
   width: 100%;
+  height: auto;
 }
 
 .text-center{
@@ -17,33 +18,59 @@ html{
 }
 
 h1{
-  font-size: 1.7rem;
-  margin-top: 150px;
-  margin-bottom: 300px;
+  font-size: 1.8rem;
+  margin-top: 90px;
+  margin-bottom: 150px;
 }
 
 h2{
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 h3{
-  font-size: 1.3rem;
-  margin-bottom: 100px;
+  font-size: 1.4rem;
+  margin: 50px auto 0 auto;
 
+}
+
+.by{
+  margin-bottom: 300px;
 }
 
 #box-area{
   display: flex;
   flex-direction: column;
-  h2{
-    margin-bottom: 150px;
+  .box{
+    width: 94%;
+    border: solid black 1px;
+    margin: 20px auto;
+    border-radius: 15px;
   }
-  p{
-    width: 84%;
-    margin: 0 auto 200px auto;
+    p{
+      width: 85%;
+      margin: 50px auto 20px auto;
+      padding: 10px;
+      line-height: 48px;
+      border: 1px solid #6c6c6c;
+      border-radius: 10px;
+      span{
+        font-size: 1.9rem;
+      }
   }
 }
+@media (min-width: 769px){
+  #box-area{
+  flex-direction: row;
+  .box{
+    margin: 20px;
+  }
+  }
+}
+
 #button-area{
+  h2{
+    margin: 200px auto auto auto;
+  }
   a{
     display: block;
     border: solid black 3px;
@@ -53,14 +80,17 @@ h3{
     line-height: 80px;
     width: 240px;
     height: 80px;
-    margin: 170px auto 300px auto;
+    margin: 170px auto 100px auto;
+  }
+}
 
-    &:hover{
-      background-color: #c6c6c6;
-    }
+@media (min-width: 769px){
+  a:hover{
+    background-color: #e3e3e3;
   }
 }
 
 footer{
   font-size: 0.8rem;
+  margin-bottom: 5px;
 }
