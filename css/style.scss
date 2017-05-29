@@ -9,8 +9,17 @@ html{
 }
 
 .header-pic{
-  width: 100%;
-  height: auto;
+ background-image:url(../images/header-pic01.jpg);
+ background-size: cover;
+ background-position: center center;
+ width: auto;
+ height: 250px;
+}
+
+@media(min-width: 768px){
+  .header-pic{
+    height: 500px;
+  }
 }
 
 .text-center{
@@ -34,7 +43,7 @@ h3{
 }
 
 .by{
-  margin-bottom: 300px;
+  margin-bottom: 150px;
 }
 
 #box-area{
